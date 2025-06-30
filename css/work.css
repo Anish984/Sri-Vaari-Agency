@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  font-size: larger;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+   row-gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.buttons {
+  all: unset;
+   font-size: 1.1rem;
+  cursor: pointer;
+  width: 30%; /* make 3 buttons fit within 100% including gaps */
+  text-align: center;
+  height: 2rem;
+  padding: 0.45em 0.5em;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+ 
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.buttons:hover {
+  background: #1a252f;
+}
+
+/* Responsive layout for very narrow screens like 370px */
+@media (max-width: 400px) {
+  .buttons {
+    width: 30%;  /* 3 buttons + 2 gaps (0.5rem) fits ~370px */
+    font-size: 0.85rem;
+    padding: 0.4em 0.3em;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+}
+
+
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.container{
+    border: #1a252f 1px  solid;
+    border-radius: 5px;
+    padding: 1rem;
+    width:25%;
+}
+.services-image{
+    width: 15%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .services-image{
+      width:30%;
+      height:10rem;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+ 
+}

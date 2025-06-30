@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – Sri Vaari Agency</title>
+  <link rel="stylesheet" href="./css/contact.css" />
+</head>
+<body>
+
+  <!-- Reused Header / Nav -->
+    <nav>
+    <div class="nav-container">
+      <div class="logo-title">
+        <img src="./images/img1.jpg" alt="Logo" class="logo">
+        <h1>Sri Vaari Agency</h1>
+      </div>
+      <div class="nav-buttons">
+        <button class="buttons" onclick="location.href='index.html'">Home</button>
+        <button class="buttons" onclick="location.href = './work.html'">services</button>
+        <button class="buttons" onclick="location.href = './contact.html'">Contact Us</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <header>
+    <h2>Contact Us</h2>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+     <br/>
+      <p><strong>Name:</strong> A. DilliBabu</p>
+      <p><strong>Phone:</strong> +91 98409 79644</p>
+      <p><strong>Email:</strong> <a href="mailto:dillibabu1717@gmail.com">dillibabu1717@gmail.com</a></p>
+      <p><strong>Address:</strong><br>No: 780, 4th Block,<br>Mogappair west, <br>Chennai - 600037</p>
+    </div>
+
+<div class="callback-form">
+  <h3>Request a Call Back</h3>
+  <br>
+  <form action="https://formsubmit.co/anishd7878@gmail.com" method="POST"
+        style="border: solid #2a3846; padding: 2rem; border-radius: 10px;">
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required
+           placeholder="10 digit number"
+           pattern="[0-9]{10}" inputmode="numeric"
+           title="Please enter a 10-digit number" />
+
+    <!-- FormSubmit hidden fields -->
+    <input type="hidden" name="_subject" value="New Call Back Request">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+    <button type="submit">Request Call</button>
+  </form>
+</div>
+    <!-- <div class="callback-form">
+      <h3>Request a Call Back</h3>
+      <br>
+      <form action="https://formspree.io/f/xjvowzqk" method="POST" style="border:  solid #1a252f; padding: 2rem; border-radius: 10px;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="10 digit number" />
+
+        <button type="submit">Request Call</button>
+      </form>
+    </div>
+  </div> -->
+</body>
+
+
+</html>
